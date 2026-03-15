@@ -3,7 +3,6 @@ import {
   BellRing,
   Building2,
   CreditCard,
-  GraduationCap,
   UsersRound,
 } from "lucide-react";
 import { PublicHeader } from "@/components/navigation/PublicHeader";
@@ -13,7 +12,7 @@ const features = [
   {
     icon: Building2,
     title: "학원/반 운영",
-    description: "학원 정보, 반 시간표, 정원, 상태를 한 흐름으로 관리합니다.",
+    description: "학원 정보, 반 시간표, 정원, 상태를 한 화면에서 관리합니다.",
   },
   {
     icon: UsersRound,
@@ -46,11 +45,11 @@ export default function InstructorEntryPage() {
             <h1 className="display-font mt-4 text-3xl font-bold leading-[1.06] tracking-[-0.06em] text-text-primary sm:text-4xl">
               강사 계정으로 로그인하면
               <br />
-              운영 화면이 바로 열립니다.
+              운영 화면이 바로 열립니다
             </h1>
             <p className="mt-4 max-w-xl text-sm leading-7 text-text-secondary">
-              시작점만 별도로 두고, 로그인 후 실제 역할이 강사면 지금처럼 하단 네비가
-              스튜디오 기준으로 전환됩니다.
+              학원, 반, 원생, 공지, 원비 현황을 바로 확인하고 필요한 작업을 이어서
+              처리할 수 있습니다
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -93,23 +92,6 @@ export default function InstructorEntryPage() {
                 </Card>
               );
             })}
-
-            <Card className="rounded-[28px] bg-[linear-gradient(180deg,#eef5ff_0%,#ffffff_100%)] p-5">
-              <div className="flex items-start gap-3">
-                <span className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-white text-primary">
-                  <GraduationCap size={20} />
-                </span>
-                <div>
-                  <h2 className="text-sm font-semibold text-text-primary">
-                    학부모 메인은 그대로 유지
-                  </h2>
-                  <p className="mt-1 text-xs leading-6 text-text-secondary">
-                    메인 랜딩과 기본 회원가입은 학부모 흐름 중심으로 두고,
-                    강사 화면은 이 경로에서만 진입하게 분리했습니다.
-                  </p>
-                </div>
-              </div>
-            </Card>
           </div>
         </section>
       </div>

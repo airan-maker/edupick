@@ -20,8 +20,8 @@ const roles = [
   {
     id: "INSTRUCTOR" as const,
     icon: School,
-    title: "강사 View",
-    description: "학원, 반, 공지, 수납 관리를 한 화면 흐름으로 사용합니다.",
+    title: "강사",
+    description: "학원, 반, 공지, 수납을 한 곳에서 관리합니다.",
     tint: "from-amber-100 to-orange-50",
   },
 ];
@@ -100,7 +100,7 @@ export default function OnboardingPage() {
               어떻게 사용하실 건가요?
             </h1>
             <p className="text-sm leading-7 text-text-secondary">
-              지금은 학부모 View와 강사 View 두 흐름에 집중합니다.
+              사용 목적에 맞는 역할을 선택해 주세요.
             </p>
 
             <Card className="hidden bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] p-5 lg:block">

@@ -19,8 +19,6 @@ import characterSoccer from "../../images/characters/edupick_character_2.png";
 import characterReader from "../../images/characters/edupick_character_3.png";
 import characterMartial from "../../images/characters/edupick_character_4.png";
 import characterTeacher from "../../images/characters/edupick_character_5.png";
-import characterPainter from "../../images/characters/edupick_character_6.png";
-import characterRunner from "../../images/characters/edupick_character_7.png";
 import characterLaptop from "../../images/characters/edupick_character_8.png";
 
 const introNavItems = [
@@ -29,39 +27,61 @@ const introNavItems = [
   { href: "#start", label: "시작하기" },
 ] satisfies readonly PublicHeaderNavItem[];
 
-const heroHighlights = [
+const heroCards = [
   {
-    title: "탐색",
-    description: "시간표, 셔틀, 비용을 먼저 확인합니다.",
+    id: "today",
+    label: "TODAY",
+    title: "오늘 챙길 일정만 바로 보여줘요",
+    description: "수업 시간, 원비 일정, 준비물 공지를 한 번에 확인할 수 있어요.",
+    items: ["오늘 16:00 영어 회화 A", "원비 납부 3일 전", "준비물 공지"],
+    panelTone:
+      "sm:col-span-2 bg-[linear-gradient(180deg,#ffffff_0%,#edf6ff_100%)]",
+    image: characterReader,
+    imageClassName: "right-4 top-4 w-[64px] sm:w-[72px]",
+    contentClassName: "pr-20 sm:pr-24",
   },
   {
-    title: "신청",
-    description: "고른 반 정보를 유지한 채 등록합니다.",
+    id: "compare",
+    label: "COMPARE",
+    title: "아이에게 맞는 학원을 찾기 쉬워져요",
+    description: "시간표, 셔틀, 월 수강료를 한눈에 비교할 수 있어요.",
+    items: ["시간표", "셔틀 여부", "월 수강료"],
+    panelTone: "bg-white/88",
+    image: characterDancer,
+    imageClassName: "right-4 top-4 w-[58px] sm:w-[66px]",
+    contentClassName: "pr-18 sm:pr-20",
   },
   {
-    title: "관리",
-    description: "일정과 공지를 홈에서 다시 확인합니다.",
+    id: "apply",
+    label: "PAYMENT",
+    title: "신청 후에도 계속 편하게",
+    description: "등록한 뒤 일정 확인과 원비 납부까지 이어서 챙길 수 있어요.",
+    items: ["납부 예정", "카드 결제", "최근 공지"],
+    panelTone: "bg-[linear-gradient(180deg,#fffaf2_0%,#ffefdd_100%)]",
+    image: characterSoccer,
+    imageClassName: "right-4 top-4 w-[58px] sm:w-[66px]",
+    contentClassName: "pr-18 sm:pr-20",
   },
 ] as const;
 
 const coreBenefits = [
   {
     icon: Search,
-    title: "비교 기준이 한눈에 보입니다",
+    title: "아이에게 맞는 학원을 고르기 쉬워져요",
     description:
-      "거리만 보는 대신 시간표, 셔틀, 수강료를 먼저 읽고 아이 일정에 맞는 반만 빠르게 좁힐 수 있습니다.",
+      "거리보다 더 중요한 시간표, 셔틀, 수강료를 먼저 보고 아이에게 맞는 수업만 빠르게 찾을 수 있어요.",
   },
   {
     icon: CreditCard,
-    title: "신청 흐름이 끊기지 않습니다",
+    title: "마음에 드는 수업은 바로 신청할 수 있어요",
     description:
-      "학원 상세에서 반을 다시 찾지 않아도 고른 반 정보와 비용이 그대로 이어져 결제 직전까지 맥락이 유지됩니다.",
+      "학원 상세에서 다시 헤매지 않고, 보고 있던 반 정보와 비용 그대로 신청까지 이어집니다.",
   },
   {
     icon: CalendarDays,
-    title: "등록 후 확인도 단순합니다",
+    title: "등록 후 일정과 원비도 편하게 챙길 수 있어요",
     description:
-      "오늘 수업, 결제 예정, 최근 공지를 홈에서 바로 보게 정리해 재방문 동선도 짧게 만들었습니다.",
+      "오늘 수업, 원비 납부, 최근 공지를 한 화면에서 확인해 놓치지 않게 도와드려요.",
   },
 ] satisfies readonly {
   icon: LucideIcon;
@@ -73,41 +93,36 @@ const journeyCards = [
   {
     id: "parent",
     label: "PARENT FLOW",
-    title: "학부모는 필요한 정보만 빠르게 확인합니다",
+    title: "학부모는 필요한 정보만 빠르게 확인할 수 있어요",
     description:
-      "소개 문구보다 실제 선택 흐름이 먼저 보이도록 정리했습니다. 아이에게 맞는 반을 찾고 바로 등록하는 데 집중합니다.",
-    chips: ["/discover", "/signup", "/home"],
+      "아이에게 맞는 학원을 찾고, 신청하고, 일정과 원비까지 한 곳에서 챙길 수 있어요.",
     steps: [
-      "시간표와 셔틀이 맞는 반만 먼저 추립니다.",
-      "고른 반 정보와 월 수강료를 그대로 유지한 채 신청합니다.",
-      "등록 후에는 홈에서 일정, 결제, 공지를 함께 확인합니다.",
+      "시간표와 셔틀이 맞는 학원부터 쉽게 고를 수 있어요.",
+      "마음에 드는 반은 월 수강료를 확인한 뒤 바로 신청할 수 있어요.",
+      "등록 후에는 홈에서 일정, 원비, 공지를 함께 챙길 수 있어요.",
     ],
     ctaHref: "/discover",
     ctaLabel: "학원 둘러보기",
-    chipTone: "bg-blue-50 text-primary",
     panelTone: "bg-[linear-gradient(180deg,#ffffff_0%,#edf6ff_100%)]",
     sprite: characterTeacher,
-    spriteClassName: "bottom-[-28px] right-[-16px] w-[126px] sm:w-[148px]",
+    spriteClassName: "right-[8px] top-[10px] w-[108px] sm:right-[12px] sm:top-[12px] sm:w-[128px]",
   },
   {
     id: "studio",
     label: "INSTRUCTOR FLOW",
-    title: "강사와 원장은 넓은 화면에서 더 크게 관리합니다",
+    title: "강사와 원장은 운영을 더 가볍게 관리할 수 있어요",
     description:
-      "모바일에서는 빠르게 확인하고, PC에서는 반 운영과 수납 현황을 더 넓게 다룰 수 있도록 같은 구조로 연결했습니다.",
-    chips: ["/instructor", "/studio", "/studio/payments"],
+      "반 운영과 원생 정보, 원비 현황을 한 화면에서 보고 아이들에게 더 집중할 수 있어요.",
     steps: [
-      "강사 전용 진입점에서 운영 화면으로 바로 이동합니다.",
-      "반, 원생, 일정 상태를 스튜디오에서 한 번에 관리합니다.",
-      "수납 현황과 공지를 같은 흐름 안에서 처리합니다.",
+      "강사 전용 화면으로 바로 들어갈 수 있어요.",
+      "반, 원생, 일정 상태를 한 번에 확인하고 수정할 수 있어요.",
+      "원비 현황과 공지도 같은 곳에서 챙길 수 있어요.",
     ],
     ctaHref: "/instructor",
     ctaLabel: "강사 전용 보기",
-    chipTone: "bg-amber-100 text-amber-900",
     panelTone: "bg-[linear-gradient(180deg,#fffaf2_0%,#ffefdd_100%)]",
     sprite: characterLaptop,
-    spriteClassName:
-      "bottom-[-24px] right-[-28px] w-[152px] sm:w-[174px]",
+    spriteClassName: "right-[6px] top-[10px] w-[112px] sm:right-[12px] sm:top-[12px] sm:w-[128px]",
   },
 ] as const;
 
@@ -164,8 +179,13 @@ function CharacterSprite({
       sizes={sizes}
       draggable={false}
       className={cn("pointer-events-none absolute h-auto select-none", className)}
+      style={{ maxWidth: src.width }}
     />
   );
+}
+
+function trimSentenceEnding(text: string) {
+  return text.replace(/[.!?]+$/u, "");
 }
 
 export default function HomePage() {
@@ -177,7 +197,7 @@ export default function HomePage() {
       <div className="mx-auto max-w-[1180px]">
         <PublicHeader
           navItems={introNavItems}
-          subtitle="아이의 수업 탐색과 학원 운영을 더 간단하게"
+          subtitle="학원 탐색부터 원비 납부까지 한 곳에서"
         />
 
         <section className="relative mt-5 overflow-hidden rounded-[36px] border border-white/80 bg-[linear-gradient(180deg,#fbfdff_0%,#eef5ff_100%)] px-5 py-6 shadow-[0_28px_80px_rgba(15,23,42,0.08)] sm:px-7 sm:py-8 lg:rounded-[44px] lg:px-12 lg:py-12">
@@ -190,19 +210,19 @@ export default function HomePage() {
             <div className="max-w-[560px]">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/84 px-4 py-2 text-[11px] font-semibold tracking-[0.18em] text-text-secondary shadow-[0_14px_28px_rgba(148,163,184,0.14)]">
                 <Sparkles size={14} className="text-primary" />
-                MOBILE FIRST LANDING
+                FOR BUSY PARENTS
               </span>
 
               <h1 className="display-font mt-5 text-[2.45rem] font-bold leading-[0.97] tracking-[-0.07em] text-text-primary sm:text-[3.4rem] lg:text-[4.25rem]">
-                우리 아이에게 맞는 학원을
+                아이 학원 일정,
                 <br />
-                더 쉽게 찾고 바로 등록하세요.
+                아직도 따로 챙기고 계신가요?
               </h1>
 
               <p className="mt-5 max-w-xl text-sm leading-7 text-text-secondary sm:text-base sm:leading-8 lg:text-lg">
-                EduPick은 학원 탐색, 신청, 일정 확인, 운영 관리를 하나의 흐름으로
-                정리했습니다. 랜딩 페이지는 설명을 줄이고 핵심 행동만 남겨 모바일에서
-                먼저 읽히고, PC에서는 더 넓게 관리할 수 있게 구성했습니다.
+                {trimSentenceEnding(
+                  "EduPick 하나면 학원 탐색부터 신청, 일정 확인, 원비 납부까지 한 곳에서 할 수 있어요."
+                )}
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -214,93 +234,51 @@ export default function HomePage() {
                   강사 전용 보기
                 </CtaLink>
               </div>
-
-              <div className="mt-7 grid gap-3">
-                {heroHighlights.map((item) => (
-                  <div
-                    key={item.title}
-                    className="rounded-[24px] border border-white/75 bg-white/78 px-4 py-4 shadow-[0_14px_30px_rgba(148,163,184,0.12)] backdrop-blur-sm sm:px-5"
-                  >
-                    <p className="text-sm font-semibold text-text-primary">{item.title}</p>
-                    <p className="mt-1 text-sm leading-6 text-text-secondary">
-                      {item.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </div>
 
-            <div className="relative min-h-[420px] overflow-hidden rounded-[32px] border border-white/75 bg-[linear-gradient(180deg,#f8fbff_0%,#e8f2ff_100%)] px-4 py-5 shadow-[0_24px_60px_rgba(84,120,183,0.12)] sm:min-h-[480px] sm:px-6 sm:py-6 lg:min-h-[560px] lg:rounded-[40px]">
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 bg-[radial-gradient(circle_at_24%_22%,rgba(255,255,255,0.94),transparent_20%),radial-gradient(circle_at_80%_18%,rgba(255,210,146,0.3),transparent_16%),linear-gradient(120deg,rgba(255,255,255,0.28),transparent_54%)]"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute inset-x-4 top-[32%] h-px bg-[linear-gradient(90deg,transparent,rgba(101,145,214,0.36),transparent)] sm:inset-x-6"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute left-[12%] top-[16%] h-20 w-20 rounded-full bg-white/90 blur-2xl sm:h-24 sm:w-24"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute right-[16%] top-[10%] h-20 w-20 rounded-full bg-[#ffd9a8]/55 blur-2xl sm:h-24 sm:w-24"
-              />
+            <div className="grid gap-4 sm:grid-cols-2 lg:gap-5">
+              {heroCards.map((card) => (
+                <article
+                  key={card.id}
+                  className={cn(
+                    "relative overflow-hidden rounded-[30px] border border-white/75 p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] backdrop-blur-sm sm:p-6",
+                    card.panelTone
+                  )}
+                >
+                  <CharacterSprite
+                    src={card.image}
+                    className={cn(
+                      "drop-shadow-[0_16px_24px_rgba(120,146,193,0.14)]",
+                      card.imageClassName
+                    )}
+                    priority={card.id === "today"}
+                    sizes="(min-width: 1024px) 72px, 18vw"
+                  />
 
-              <div className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1.5 text-[11px] font-semibold text-text-primary shadow-[0_12px_24px_rgba(148,163,184,0.16)] sm:left-6 sm:top-6">
-                영어
-              </div>
-              <div className="absolute right-4 top-12 rounded-full bg-[#182235] px-3 py-1.5 text-[11px] font-semibold text-white shadow-[0_18px_32px_rgba(15,23,42,0.22)] sm:right-6">
-                예체능
-              </div>
-              <div className="absolute left-6 top-[44%] rounded-full bg-white/90 px-3 py-1.5 text-[11px] font-semibold text-text-primary shadow-[0_12px_24px_rgba(148,163,184,0.14)]">
-                미술
-              </div>
+                  <div className={cn("relative z-10", card.contentClassName)}>
+                    <p className="text-xs font-semibold tracking-[0.18em] text-text-secondary">
+                      {card.label}
+                    </p>
+                    <h2 className="mt-3 text-xl font-semibold tracking-[-0.04em] text-text-primary sm:text-2xl">
+                      {card.title}
+                    </h2>
+                    <p className="mt-3 text-sm leading-7 text-text-secondary">
+                      {trimSentenceEnding(card.description)}
+                    </p>
 
-              <CharacterSprite
-                src={characterDancer}
-                className="float-gentle left-[-8px] top-5 w-[132px] drop-shadow-[0_18px_28px_rgba(120,146,193,0.18)] sm:left-0 sm:w-[156px] lg:w-[184px]"
-                priority
-                sizes="(min-width: 1024px) 190px, 30vw"
-              />
-              <CharacterSprite
-                src={characterReader}
-                className="float-gentle-delayed right-[6px] top-8 w-[124px] drop-shadow-[0_18px_28px_rgba(120,146,193,0.18)] sm:right-2 sm:w-[148px] lg:w-[172px]"
-                priority
-                sizes="(min-width: 1024px) 180px, 28vw"
-              />
-              <CharacterSprite
-                src={characterPainter}
-                className="bottom-[16px] left-1/2 w-[210px] -translate-x-[52%] drop-shadow-[0_28px_40px_rgba(120,146,193,0.16)] sm:w-[245px] lg:w-[300px]"
-                priority
-                sizes="(min-width: 1024px) 260px, 42vw"
-              />
-              <CharacterSprite
-                src={characterRunner}
-                className="float-gentle-delayed bottom-[-18px] right-[8px] w-[104px] drop-shadow-[0_18px_28px_rgba(120,146,193,0.18)] sm:w-[122px] lg:w-[148px]"
-                sizes="(min-width: 1024px) 140px, 20vw"
-              />
-              <CharacterSprite
-                src={characterSoccer}
-                className="float-gentle-slow left-[39%] top-[14%] w-[88px] drop-shadow-[0_18px_28px_rgba(120,146,193,0.16)] sm:w-[104px] lg:w-[124px]"
-                sizes="(min-width: 1024px) 120px, 16vw"
-              />
-
-              <div className="absolute bottom-4 left-4 max-w-[220px] rounded-[28px] bg-[#16233a] px-4 py-4 text-white shadow-[0_24px_48px_rgba(15,23,42,0.24)] sm:bottom-6 sm:left-6 sm:max-w-[250px] sm:px-5">
-                <p className="text-[11px] font-semibold tracking-[0.18em] text-white/60">
-                  ONE FLOW
-                </p>
-                <p className="mt-2 text-base font-semibold leading-6 sm:text-lg">
-                  탐색부터 일정 확인까지
-                  <br />
-                  끊기지 않는 구조
-                </p>
-                <p className="mt-2 text-xs leading-6 text-white/70 sm:text-sm">
-                  모바일에서는 빠르게 읽히고, PC에서는 더 넓게 관리할 수 있게 같은
-                  흐름으로 연결합니다.
-                </p>
-              </div>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {card.items.map((item) => (
+                        <span
+                          key={item}
+                          className="rounded-full bg-white/90 px-3 py-1.5 text-xs font-semibold text-text-secondary shadow-[0_10px_18px_rgba(148,163,184,0.12)]"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -311,11 +289,12 @@ export default function HomePage() {
               WHY EDU PICK
             </p>
             <h2 className="display-font mt-3 text-3xl font-bold tracking-[-0.06em] text-text-primary sm:text-4xl">
-              처음 이해해야 할 핵심은 세 가지면 충분합니다.
+              처음부터 복잡하지 않게 시작할 수 있어요
             </h2>
             <p className="mt-4 text-sm leading-7 text-text-secondary sm:text-base sm:leading-8">
-              랜딩 페이지를 길게 설명하지 않고, 사용자가 실제로 궁금해하는 비교,
-              신청, 등록 이후 관리 흐름만 남겼습니다.
+              {trimSentenceEnding(
+                "꼭 필요한 정보만 먼저 보여드려서 학원 찾기와 일정 관리가 훨씬 쉬워져요."
+              )}
             </p>
           </div>
 
@@ -335,7 +314,7 @@ export default function HomePage() {
                     {item.title}
                   </h3>
                   <p className="mt-3 text-sm leading-7 text-text-secondary sm:text-base">
-                    {item.description}
+                    {trimSentenceEnding(item.description)}
                   </p>
                 </article>
               );
@@ -344,16 +323,16 @@ export default function HomePage() {
         </section>
 
         <section id="flow" className="mt-16 scroll-mt-28">
-          <div className="max-w-[680px]">
+          <div className="max-w-[680px] lg:max-w-[860px] xl:max-w-[920px]">
             <p className="text-xs font-semibold tracking-[0.18em] text-text-secondary">
               CLEAR ENTRY
             </p>
             <h2 className="display-font mt-3 text-3xl font-bold tracking-[-0.06em] text-text-primary sm:text-4xl">
-              학부모와 강사 모두 진입점이 분명해야 합니다.
+              학부모와 강사 모두를 위한 EduPick
             </h2>
             <p className="mt-4 text-sm leading-7 text-text-secondary sm:text-base sm:leading-8">
-              첫 방문자는 모바일에서 빠르게 이해하고, 운영자는 PC에서 더 큰 화면으로
-              관리할 수 있도록 역할별 흐름을 나눴습니다.
+              학부모는 아이 학원 탐색 및 일정 관리를 간편하게 할 수 있어요. 강사는
+              학원 운영보다는 아이들에게 집중할 수 있어요.
             </p>
           </div>
 
@@ -366,29 +345,17 @@ export default function HomePage() {
                   card.panelTone
                 )}
               >
-                <div className="relative z-10 max-w-[430px] pr-16 sm:pr-24">
-                  <span className="text-xs font-semibold tracking-[0.18em] text-text-secondary">
-                    {card.label}
-                  </span>
-                  <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-text-primary">
-                    {card.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-text-secondary sm:text-base">
-                    {card.description}
-                  </p>
-
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {card.chips.map((chip) => (
-                      <span
-                        key={chip}
-                        className={cn(
-                          "rounded-full px-3 py-1 text-xs font-semibold",
-                          card.chipTone
-                        )}
-                      >
-                        {chip}
-                      </span>
-                    ))}
+                <div className="relative z-10">
+                  <div className="max-w-[430px] pr-16 sm:pr-24 lg:max-w-[460px] lg:pr-28">
+                    <span className="text-xs font-semibold tracking-[0.18em] text-text-secondary">
+                      {card.label}
+                    </span>
+                    <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-text-primary">
+                      {card.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-7 text-text-secondary sm:text-base">
+                      {trimSentenceEnding(card.description)}
+                    </p>
                   </div>
 
                   <ol className="mt-6 space-y-3">
@@ -401,7 +368,7 @@ export default function HomePage() {
                           {index + 1}
                         </span>
                         <span className="text-sm leading-6 text-text-secondary">
-                          {step}
+                          {trimSentenceEnding(step)}
                         </span>
                       </li>
                     ))}
@@ -445,11 +412,12 @@ export default function HomePage() {
               START HERE
             </p>
             <h2 className="display-font mt-3 text-3xl font-bold tracking-[-0.06em] text-white sm:text-4xl">
-              학원 찾기부터 운영 관리까지, 더 가볍게 시작하세요.
+              학원 찾기부터 원비 납부까지, 한 번에 할 수 있어요
             </h2>
             <p className="mt-4 text-sm leading-7 text-white/72 sm:text-base sm:leading-8">
-              모바일에서는 바로 행동하고, PC에서는 더 넓게 확인할 수 있도록 랜딩과
-              제품 화면의 첫 인상을 정리했습니다.
+              {trimSentenceEnding(
+                "우리 아이에게 맞는 수업을 찾고, 일정과 원비까지 편하게 챙겨보세요."
+              )}
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -469,7 +437,7 @@ export default function HomePage() {
 
           <CharacterSprite
             src={characterMartial}
-            className="float-gentle-delayed bottom-[-48px] left-[-22px] w-[138px] opacity-90 drop-shadow-[0_18px_30px_rgba(24,35,56,0.34)] sm:w-[168px] lg:w-[192px]"
+            className="float-gentle-delayed bottom-[-44px] right-[-16px] w-[138px] opacity-90 drop-shadow-[0_18px_30px_rgba(24,35,56,0.34)] sm:w-[168px] lg:w-[192px]"
             sizes="(min-width: 1024px) 160px, 18vw"
           />
         </section>

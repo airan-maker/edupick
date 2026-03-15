@@ -29,6 +29,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   min-height: 100%;
+  word-break: keep-all;
   background:
     radial-gradient(circle at 0% 10%, rgba(255, 255, 255, 0.82), transparent 24%),
     radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.62), transparent 22%),
