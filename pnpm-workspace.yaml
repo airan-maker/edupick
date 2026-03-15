@@ -1,0 +1,12 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+supportedArchitectures:
+  os:
+    - win32
+    - linux
+  cpu:
+    - x64
+  libc:
+    - glibc

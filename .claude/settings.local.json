@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -v && npm -v 2>/dev/null; pnpm -v 2>/dev/null; yarn -v 2>/dev/null)",
+      "Bash(ls /c/Users/RAN/edupick/apps/web/src/app/\\\\\\(app\\\\\\)/calendar/ 2>/dev/null || echo \"not exists\")",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}

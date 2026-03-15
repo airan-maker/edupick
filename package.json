@@ -1,0 +1,24 @@
+{
+  "name": "edupick",
+  "private": true,
+  "scripts": {
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:reset": "docker compose down -v && docker compose up -d",
+    "dev:api": "pnpm --filter @edupick/api dev",
+    "dev:web": "pnpm --filter @edupick/web dev",
+    "build:api": "pnpm --filter @edupick/api build",
+    "build:web": "pnpm --filter @edupick/web build",
+    "data:seed": "pnpm --filter @edupick/api data:seed",
+    "data:seed:dry-run": "pnpm --filter @edupick/api data:seed:dry-run",
+    "db:migrate": "pnpm --filter @edupick/api prisma:migrate",
+    "db:generate": "pnpm --filter @edupick/api prisma:generate",
+    "db:seed": "pnpm --filter @edupick/api prisma:seed",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

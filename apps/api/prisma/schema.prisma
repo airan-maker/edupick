@@ -1,0 +1,412 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["windows", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Enums ───────────────────────────────────────────────
+
+enum Role {
+  PARENT
+  INSTRUCTOR
+}
+
+enum AcademyStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum ClassStatus {
+  OPEN
+  FULL
+  CLOSED
+}
+
+enum DayOfWeek {
+  MON
+  TUE
+  WED
+  THU
+  FRI
+  SAT
+  SUN
+}
+
+enum EnrollmentStatus {
+  ACTIVE
+  PAUSED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+enum ShuttleRouteStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum FundingStatus {
+  RECRUITING
+  CONFIRMED
+  FAILED
+  CANCELLED
+}
+
+enum FundingParticipantStatus {
+  JOINED
+  PAID
+  CANCELLED
+}
+
+enum WishStatus {
+  OPEN
+  MATCHED
+  ENROLLED
+  EXPIRED
+}
+
+enum ChatRoomType {
+  CLASS_GROUP
+  DIRECT
+}
+
+enum ChatMessageType {
+  TEXT
+  IMAGE
+  ANNOUNCEMENT
+  FILE
+}
+
+// ─── Models ──────────────────────────────────────────────
+
+model User {
+  id              String   @id @default(uuid()) @db.Uuid
+  kakaoId         String?  @unique
+  email           String?  @unique
+  name            String?
+  phone           String?
+  passwordHash    String?
+  role            Role     @default(PARENT)
+  profileImageUrl String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  children              Child[]
+  ownedAcademies        Academy[]            @relation("AcademyOwner")
+  instructedClasses     Class[]              @relation("ClassInstructor")
+  enrollments           Enrollment[]
+  payments              Payment[]
+  reviews               Review[]
+  notifications         Notification[]
+  fundingParticipations FundingParticipant[]
+  wishes                Wish[]
+  chatMessages          ChatMessage[]
+  chatRoomMemberships   ChatRoomMember[]
+
+  @@index([kakaoId])
+  @@index([email])
+}
+
+model Child {
+  id            String    @id @default(uuid()) @db.Uuid
+  parentId      String    @db.Uuid
+  name          String
+  birthDate     DateTime?
+  schoolName    String?
+  schoolAddress String?
+  schoolLat     Float?
+  schoolLng     Float?
+  grade         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  parent                User                 @relation(fields: [parentId], references: [id], onDelete: Cascade)
+  enrollments           Enrollment[]
+  fundingParticipations FundingParticipant[]
+  wishes                Wish[]
+
+  @@index([parentId])
+}
+
+model Academy {
+  id            String        @id @default(uuid()) @db.Uuid
+  ownerId       String        @db.Uuid
+  name          String
+  address       String
+  lat           Float
+  lng           Float
+  phone         String?
+  categories    String[]
+  description   String?
+  hasShuttle    Boolean       @default(false)
+  hasParking    Boolean       @default(false)
+  rating        Float         @default(0)
+  reviewCount   Int           @default(0)
+  monthlyFeeMin Int?
+  monthlyFeeMax Int?
+  status        AcademyStatus @default(ACTIVE)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  owner         User           @relation("AcademyOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  classes       Class[]
+  reviews       Review[]
+  shuttleRoutes ShuttleRoute[]
+  fundings      Funding[]
+
+  @@index([ownerId])
+  @@index([lat, lng])
+  @@index([status])
+}
+
+model Class {
+  id              String      @id @default(uuid()) @db.Uuid
+  academyId       String      @db.Uuid
+  instructorId    String?     @db.Uuid
+  name            String
+  subject         String
+  ageGroup        String?
+  maxStudents     Int
+  currentStudents Int         @default(0)
+  monthlyFee      Int
+  status          ClassStatus @default(OPEN)
+  createdAt       DateTime    @default(now())
+
+  academy     Academy         @relation(fields: [academyId], references: [id], onDelete: Cascade)
+  instructor  User?           @relation("ClassInstructor", fields: [instructorId], references: [id], onDelete: SetNull)
+  schedules   ClassSchedule[]
+  enrollments Enrollment[]
+  chatRooms   ChatRoom[]
+
+  @@index([academyId])
+  @@index([instructorId])
+  @@index([subject])
+}
+
+model ClassSchedule {
+  id        String    @id @default(uuid()) @db.Uuid
+  classId   String    @db.Uuid
+  dayOfWeek DayOfWeek
+  startTime String
+  endTime   String
+
+  class Class @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  @@index([classId])
+}
+
+model Enrollment {
+  id              String           @id @default(uuid()) @db.Uuid
+  userId          String           @db.Uuid
+  childId         String?          @db.Uuid
+  classId         String           @db.Uuid
+  status          EnrollmentStatus @default(ACTIVE)
+  autoPayEnabled  Boolean          @default(true)
+  billingKey      String?
+  memo            String?
+  nextPaymentDate DateTime?
+  enrolledAt      DateTime         @default(now())
+  cancelledAt     DateTime?
+
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  child    Child?    @relation(fields: [childId], references: [id], onDelete: SetNull)
+  class    Class     @relation(fields: [classId], references: [id], onDelete: Cascade)
+  payments Payment[]
+  reviews  Review[]
+
+  @@index([userId])
+  @@index([classId])
+  @@index([childId])
+}
+
+model Payment {
+  id               String        @id @default(uuid()) @db.Uuid
+  enrollmentId     String        @db.Uuid
+  userId           String        @db.Uuid
+  amount           Int
+  status           PaymentStatus @default(PENDING)
+  portonePaymentId String?
+  lastReminderAt   DateTime?
+  paidAt           DateTime?
+  createdAt        DateTime      @default(now())
+
+  enrollment Enrollment @relation(fields: [enrollmentId], references: [id], onDelete: Cascade)
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([enrollmentId])
+  @@index([userId])
+}
+
+model ShuttleRoute {
+  id          String             @id @default(uuid()) @db.Uuid
+  academyId   String             @db.Uuid
+  name        String
+  driverName  String?
+  driverPhone String?
+  status      ShuttleRouteStatus @default(ACTIVE)
+
+  academy Academy       @relation(fields: [academyId], references: [id], onDelete: Cascade)
+  stops   ShuttleStop[]
+
+  @@index([academyId])
+}
+
+model ShuttleStop {
+  id            String  @id @default(uuid()) @db.Uuid
+  routeId       String  @db.Uuid
+  stopOrder     Int
+  address       String
+  lat           Float
+  lng           Float
+  estimatedTime String?
+
+  route ShuttleRoute @relation(fields: [routeId], references: [id], onDelete: Cascade)
+
+  @@index([routeId])
+}
+
+model Funding {
+  id              String        @id @default(uuid()) @db.Uuid
+  academyId       String        @db.Uuid
+  subject         String
+  minStudents     Int
+  maxStudents     Int
+  currentStudents Int           @default(0)
+  monthlyFee      Int
+  deadline        DateTime
+  status          FundingStatus @default(RECRUITING)
+  createdAt       DateTime      @default(now())
+
+  academy      Academy              @relation(fields: [academyId], references: [id], onDelete: Cascade)
+  participants FundingParticipant[]
+
+  @@index([academyId])
+  @@index([status])
+}
+
+model FundingParticipant {
+  id        String                    @id @default(uuid()) @db.Uuid
+  fundingId String                    @db.Uuid
+  userId    String                    @db.Uuid
+  childId   String?                   @db.Uuid
+  status    FundingParticipantStatus  @default(JOINED)
+  joinedAt  DateTime                  @default(now())
+
+  funding Funding @relation(fields: [fundingId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  child   Child?  @relation(fields: [childId], references: [id], onDelete: SetNull)
+
+  @@index([fundingId])
+  @@index([userId])
+}
+
+model Wish {
+  id            String     @id @default(uuid()) @db.Uuid
+  userId        String     @db.Uuid
+  childId       String?    @db.Uuid
+  subject       String
+  preferredDays String[]
+  preferredTime String?
+  lat           Float
+  lng           Float
+  areaName      String?
+  status        WishStatus @default(OPEN)
+  createdAt     DateTime   @default(now())
+
+  user  User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  child Child? @relation(fields: [childId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([status])
+}
+
+model ChatRoom {
+  id        String       @id @default(uuid()) @db.Uuid
+  type      ChatRoomType
+  classId   String?      @db.Uuid
+  name      String?
+  createdAt DateTime     @default(now())
+
+  class    Class?           @relation(fields: [classId], references: [id], onDelete: SetNull)
+  messages ChatMessage[]
+  members  ChatRoomMember[]
+
+  @@index([classId])
+}
+
+model ChatMessage {
+  id        String          @id @default(uuid()) @db.Uuid
+  roomId    String          @db.Uuid
+  senderId  String          @db.Uuid
+  type      ChatMessageType @default(TEXT)
+  content   String
+  mediaUrl  String?
+  isPinned  Boolean         @default(false)
+  createdAt DateTime        @default(now())
+
+  room   ChatRoom @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  sender User     @relation(fields: [senderId], references: [id], onDelete: Cascade)
+
+  @@index([roomId])
+  @@index([senderId])
+  @@index([roomId, createdAt])
+}
+
+model ChatRoomMember {
+  id         String    @id @default(uuid()) @db.Uuid
+  roomId     String    @db.Uuid
+  userId     String    @db.Uuid
+  joinedAt   DateTime  @default(now())
+  lastReadAt DateTime?
+
+  room ChatRoom @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  user User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([roomId, userId])
+  @@index([roomId])
+  @@index([userId])
+}
+
+model Review {
+  id              String   @id @default(uuid()) @db.Uuid
+  academyId       String   @db.Uuid
+  userId          String   @db.Uuid
+  enrollmentId    String?  @db.Uuid
+  rating          Float
+  content         String?
+  receiptImageUrl String?
+  isVerified      Boolean  @default(false)
+  createdAt       DateTime @default(now())
+
+  academy    Academy     @relation(fields: [academyId], references: [id], onDelete: Cascade)
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  enrollment Enrollment? @relation(fields: [enrollmentId], references: [id], onDelete: SetNull)
+
+  @@index([academyId])
+  @@index([userId])
+}
+
+model Notification {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @db.Uuid
+  type      String
+  title     String
+  body      String
+  data      Json?
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([userId, isRead])
+}

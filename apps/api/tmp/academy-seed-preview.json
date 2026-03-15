@@ -1,0 +1,1667 @@
+[
+  {
+    "address": "서울특별시 강남구 논현로175길 64",
+    "categories": [
+      "기타",
+      "논술",
+      "입시.검정 및 보습",
+      "미술"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5242542,
+    "lng": 127.0237827,
+    "name": "301아카데미(Academy)영어교습소",
+    "officeCode": "B10",
+    "phone": "02-0000-0000",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000040501"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000042509"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000035363"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000036123"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000041808"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000041017"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000025167"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000043161"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000050945"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000029005"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000015226"
+      },
+      {
+        "source": "neis",
+        "sourceId": "4536"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000032827"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 광평로10길 15",
+    "categories": [
+      "입시.검정 및 보습"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4820914,
+    "lng": 127.08112,
+    "name": "3030영어교습소",
+    "officeCode": "B10",
+    "phone": "010-5435-5177",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000051471"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 삼성로 150",
+    "categories": [
+      "입시.검정 및 보습"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4956953,
+    "lng": 127.0685647,
+    "name": "365국어교습소",
+    "officeCode": "B10",
+    "phone": "010-2888-0365",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000050966"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 논현로136길 3",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5159647,
+    "lng": 127.0303597,
+    "name": "365필름아트진학상담지도교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000042042"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 삼성로64길 5",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5008929,
+    "lng": 127.06104,
+    "name": "IG수학교습소",
+    "officeCode": "B10",
+    "phone": "02-558-6799",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000012510"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 압구정로 309",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5313427,
+    "lng": 127.0349463,
+    "name": "J바이올린음악교습소",
+    "officeCode": "B10",
+    "phone": "070-8861-7387",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000035664"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 논현로161길 14",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5236025,
+    "lng": 127.0270769,
+    "name": "LYS잉글리쉬(English)영어교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000039880"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 압구정로54길 14",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5269935,
+    "lng": 127.0393436,
+    "name": "SCMA음악교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000037505"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 광평로10길 6",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.482319,
+    "lng": 127.0775171,
+    "name": "SJ EMI영어교습소",
+    "officeCode": "B10",
+    "phone": "070-8861-3958",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000041209"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000030619"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 남부순환로 2927",
+    "categories": [
+      "예능(대)"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4936881,
+    "lng": 127.0603918,
+    "name": "감각의논리미술교습소",
+    "officeCode": "B10",
+    "phone": "02-555-5456",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000051416"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 도곡로93길 12",
+    "categories": [
+      "미술"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5012731,
+    "lng": 127.0653619,
+    "name": "감성예찬미술교습소",
+    "officeCode": "B10",
+    "phone": "02-564-2575",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "22530"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 역삼로 306",
+    "categories": [
+      "미술"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4984403,
+    "lng": 127.0461336,
+    "name": "강남미술교습소",
+    "officeCode": "B10",
+    "phone": "02-543-8843",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "2000002315"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 삼성로 212",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4977414,
+    "lng": 127.0650701,
+    "name": "강남세고비아기타교습소",
+    "officeCode": "B10",
+    "phone": "02-538-3151",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3171"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 선릉로6길 10",
+    "categories": [
+      "기타",
+      "논술"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4826676,
+    "lng": 127.0618399,
+    "name": "강남스카이(sky)영어교습소",
+    "officeCode": "B10",
+    "phone": "02-000-0000",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000040256"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000031337"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000031713"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 헌릉로570길 34",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4631868,
+    "lng": 127.1034684,
+    "name": "강남쎈수학교습소",
+    "officeCode": "B10",
+    "phone": "02-452-2220",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000024217"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 선릉로 227",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "강남구",
+    "lat": 37.495847,
+    "lng": 127.0527545,
+    "name": "강남아첼바이올린음악교습소",
+    "officeCode": "B10",
+    "phone": "02-538-9550",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000033411"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 광평로19길 10",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4849884,
+    "lng": 127.0878214,
+    "name": "강남일원스즈키바이올린음악교습소",
+    "officeCode": "B10",
+    "phone": "02-4595-285",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000027864"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 광평로10길 50",
+    "categories": [
+      "기타(대)"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4805965,
+    "lng": 127.0828357,
+    "name": "강남코리코딩교습소",
+    "officeCode": "B10",
+    "phone": "02-6402-0201",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000052955"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 선릉로62길 30",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4977736,
+    "lng": 127.0550569,
+    "name": "강성호올림피아드과학교습소",
+    "officeCode": "B10",
+    "phone": "02-558-1881",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000011385"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 도곡로78길 22",
+    "categories": [
+      "논술"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4965241,
+    "lng": 127.0591145,
+    "name": "강한영어교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000053824"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 개포로22길 96",
+    "categories": [
+      "기타(대) 바둑"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4752758,
+    "lng": 127.0531108,
+    "name": "개원영재바둑교습소",
+    "officeCode": "B10",
+    "phone": "02-579-9714",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "2000002351"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 선릉로 30",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4825263,
+    "lng": 127.0611928,
+    "name": "개포스마트해법영어교습소",
+    "officeCode": "B10",
+    "phone": "02-542-0580",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "17920"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 개포로82길 13-11",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4887593,
+    "lng": 127.0681338,
+    "name": "개포양전하연과학교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000039970"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 언주로 110",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4848777,
+    "lng": 127.0542279,
+    "name": "개포푸른숲바이올린교습소",
+    "officeCode": "B10",
+    "phone": "02-529-3230",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000029551"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 광평로10길 15",
+    "categories": [
+      "예능(대)"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4820914,
+    "lng": 127.08112,
+    "name": "개포현바이올린교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000054139"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 삼성로 151",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4923541,
+    "lng": 127.0618599,
+    "name": "거인의숲수학교습소",
+    "officeCode": "B10",
+    "phone": "02-566-5347",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000023714"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 압구정로4길 27-6",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5217563,
+    "lng": 127.0208277,
+    "name": "게으른수학교습소",
+    "officeCode": "B10",
+    "phone": "02-548-4476",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000030510"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 삼성로67길 33",
+    "categories": [
+      "기타",
+      "미술"
+    ],
+    "districtName": "강남구",
+    "lat": 37.500361,
+    "lng": 127.0569258,
+    "name": "구름아이들미술교습소",
+    "officeCode": "B10",
+    "phone": "000-0000-0000",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000035880"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000035009"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 자곡로 120",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4721498,
+    "lng": 127.0965163,
+    "name": "공감수학교습소",
+    "officeCode": "B10",
+    "phone": "02-539-7359",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "8751"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 압구정로 114",
+    "categories": [
+      "입시.검정 및 보습"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5232906,
+    "lng": 127.0213179,
+    "name": "과학의맥과학교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000053879"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 논현로8길 50-6",
+    "categories": [
+      "입시.검정 및 보습"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4743783,
+    "lng": 127.0530347,
+    "name": "국탑수학교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000053718"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 도곡로 405",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4973826,
+    "lng": 127.0547242,
+    "name": "그레이스잉글리시(Grace English)영어교습소",
+    "officeCode": "B10",
+    "phone": "02-567-0305",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000022340"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 광평로31길 27",
+    "categories": [
+      "미술"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4850144,
+    "lng": 127.0901349,
+    "name": "그림세계미술교습소",
+    "officeCode": "B10",
+    "phone": "02-3411-2707",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "17607"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 언주로 107",
+    "categories": [
+      "미술"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4827754,
+    "lng": 127.0510515,
+    "name": "그림이싱싱해미술교습소",
+    "officeCode": "B10",
+    "phone": "02-574-9027",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000039492"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 왕산로 225",
+    "categories": [
+      "종합(대)"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.582134,
+    "lng": 127.0472283,
+    "name": "대성회계실무학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000064"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 고산자로36길 3",
+    "categories": [
+      "직업기술 전자"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5790378,
+    "lng": 127.0391429,
+    "name": "국제전자과학학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000083"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 이문로 38",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5907632,
+    "lng": 127.0566906,
+    "name": "조이앤플레이음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000147"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 왕산로 31",
+    "categories": [
+      "직업기술 자동차"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.576984,
+    "lng": 127.0268864,
+    "name": "한독자동차정비학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000151"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 동일로151길 30",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.6081196,
+    "lng": 127.0763202,
+    "name": "예맥보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000293"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 동일로101길 52",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5889631,
+    "lng": 127.0770723,
+    "name": "금파음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000511"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 한천로 124",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5720771,
+    "lng": 127.066187,
+    "name": "청담+수학학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000714"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 사가정로 190",
+    "categories": [
+      "논술"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5772801,
+    "lng": 127.0647699,
+    "name": "더하이스트수학학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000776"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 천호대로16길 12",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5732705,
+    "lng": 127.0311765,
+    "name": "미래사관학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000804"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 동일로129길 54",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5999888,
+    "lng": 127.0770413,
+    "name": "필립학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000000955"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 장한로30길 31",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5742248,
+    "lng": 127.0738695,
+    "name": "주미음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001047"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 답십리로72길 118",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5671183,
+    "lng": 127.0720072,
+    "name": "새암음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001068"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 겸재로3길 22",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5868695,
+    "lng": 127.0766565,
+    "name": "클라라음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001072"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 이문로1길 16-3",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5891038,
+    "lng": 127.0531336,
+    "name": "예술의악당음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001110"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 천호대로77길 89",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5657302,
+    "lng": 127.0633093,
+    "name": "이엘음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001203"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 황물로 42",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5733278,
+    "lng": 127.0462045,
+    "name": "맨하탄학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001390"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 답십리로23길 59",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5780727,
+    "lng": 127.0498679,
+    "name": "한영보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001429"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 한천로 165",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5757517,
+    "lng": 127.0672568,
+    "name": "수학엠플러스학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001549"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 용마산로 389",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5865088,
+    "lng": 127.0949534,
+    "name": "대정보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001589"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 하정로 36",
+    "categories": [
+      "직업기술 건축"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5743359,
+    "lng": 127.0269926,
+    "name": "대우건축토목학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001612"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 홍릉로15길 43",
+    "categories": [
+      "코딩"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5852036,
+    "lng": 127.0410148,
+    "name": "진주컴퓨터학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001642"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 망우로18길 33",
+    "categories": [
+      "종합(대)"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5881513,
+    "lng": 127.0629201,
+    "name": "SDA삼육외국어학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001780"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 이문로 65",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5931075,
+    "lng": 127.057739,
+    "name": "교원더퍼스트캠퍼스학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001912"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 동일로140길 16",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.6041554,
+    "lng": 127.0800871,
+    "name": "정주피아노학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000001997"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 휘경로 39",
+    "categories": [
+      "영어"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5948945,
+    "lng": 127.0642837,
+    "name": "미시간캠퍼스어학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002041"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 동일로129길 22",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5995335,
+    "lng": 127.0785085,
+    "name": "조숭지음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002058"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 면목로27길 6",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5752448,
+    "lng": 127.0849544,
+    "name": "새한음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002225"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 용마산로 436",
+    "categories": [
+      "논술"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5901608,
+    "lng": 127.0974588,
+    "name": "으뜸학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002253"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 답십리로 133",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5730417,
+    "lng": 127.0548381,
+    "name": "수재학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002272"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 용마산로116길 22",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5992895,
+    "lng": 127.1016869,
+    "name": "줄리어드음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002292"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 면목로57길 35",
+    "categories": [
+      "종합(대)"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5847181,
+    "lng": 127.0863748,
+    "name": "미래엔수학삼성영어셀레나서림학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002299"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 답십리로66길 99",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5684545,
+    "lng": 127.0661442,
+    "name": "수정음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002310"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 봉화산로56길 153",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.6014919,
+    "lng": 127.0967927,
+    "name": "하브엘음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002323"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 면목로27길 6",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5752448,
+    "lng": 127.0849544,
+    "name": "이룸학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002394"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 봉우재로 211",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5950207,
+    "lng": 127.0962617,
+    "name": "하나에듀학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002499"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 용마산로94길 47",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5886283,
+    "lng": 127.0993767,
+    "name": "면일보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002507"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 면목로48길 65",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5820775,
+    "lng": 127.0922896,
+    "name": "정상보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002515"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 한천로 481",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.6036087,
+    "lng": 127.0670124,
+    "name": "이문보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002779"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 천호대로77길 94",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5656441,
+    "lng": 127.0635261,
+    "name": "중앙플러스학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002900"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 사가정로 93",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5764163,
+    "lng": 127.0556352,
+    "name": "교우보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002977"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 신내로7가길 19",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.6023266,
+    "lng": 127.0948304,
+    "name": "뉴비전학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002983"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 답십리로72길 112",
+    "categories": [
+      "미술"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5674062,
+    "lng": 127.072134,
+    "name": "이화포르테미술학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000002990"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 제기로 131",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5881072,
+    "lng": 127.0494012,
+    "name": "예솔피아노학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000003076"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 제기로 131",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5881072,
+    "lng": 127.0494012,
+    "name": "이레음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000003079"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 망우로 489",
+    "categories": [
+      "입시.검정 및 보습"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.6008517,
+    "lng": 127.1065376,
+    "name": "에이플러스보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000003080"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 한천로 246",
+    "categories": [
+      "피아노"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5828277,
+    "lng": 127.0687524,
+    "name": "한양음악학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000003145"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 신내로 71",
+    "categories": [
+      "논술"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.605562,
+    "lng": 127.0951223,
+    "name": "한얼보습학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000003203"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 중랑구 동일로99길 47",
+    "categories": [
+      "종합(대)"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.5878102,
+    "lng": 127.0771821,
+    "name": "에덴음악미술학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000003214"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 전농로 60",
+    "categories": [
+      "영어"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5701724,
+    "lng": 127.0574784,
+    "name": "씨앤씨어학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000003231"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 동대문구 전농로 120",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.5756738,
+    "lng": 127.0579082,
+    "name": "에프엠(FM)최강수학학원",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "1000003239"
+      }
+    ],
+    "status": "ACTIVE"
+  }
+]

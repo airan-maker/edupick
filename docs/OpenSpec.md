@@ -49,7 +49,7 @@ Content-Type: application/json
 {
   "provider": "kakao" | "apple" | "google",
   "access_token": "string",
-  "role": "parent" | "adult_learner" | "instructor"
+  "role": "parent" | "instructor"
 }
 ```
 
@@ -255,7 +255,7 @@ Query Parameters:
   "recommendations": [
     {
       "class_id": "cls_01HX...",
-      "class_name": "성인 발레 초급반",
+      "class_name": "주말 발레 초급반",
       "schedule_day": "SAT",
       "schedule_time": "10:30",
       "travel_time_minutes": 12,
@@ -487,7 +487,7 @@ POST /funding/classes
 Authorization: Bearer {access_token}  // instructor only
 
 {
-  "title": "토요일 오전 성인 발레 초급반",
+  "title": "토요일 오전 발레 초급반",
   "description": "...",
   "category": "ballet",
   "target_participants": 5,
@@ -524,7 +524,7 @@ GET /funding/classes/{funding_id}
 ```json
 {
   "id": "fund_01HX...",
-  "title": "토요일 오전 성인 발레 초급반",
+  "title": "토요일 오전 발레 초급반",
   "status": "in_progress",
   "current_participants": 2,
   "min_participants": 3,

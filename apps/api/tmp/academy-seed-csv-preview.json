@@ -1,0 +1,120 @@
+[
+  {
+    "address": "서울특별시 강남구 개포로82길 7",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4887627,
+    "lng": 127.0673453,
+    "name": "301아카데미(Academy)영어교습소",
+    "officeCode": "B10",
+    "phone": "02-0000-0000",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000040501"
+      },
+      {
+        "source": "neis",
+        "sourceId": "3000042509"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 광평로10길 15",
+    "categories": [
+      "입시.검정 및 보습"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4820914,
+    "lng": 127.08112,
+    "name": "3030영어교습소",
+    "officeCode": "B10",
+    "phone": "010-5435-5177",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000051471"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 삼성로 150",
+    "categories": [
+      "입시.검정 및 보습"
+    ],
+    "districtName": "강남구",
+    "lat": 37.4956953,
+    "lng": 127.0685647,
+    "name": "365국어교습소",
+    "officeCode": "B10",
+    "phone": "010-2888-0365",
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000050966"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "서울특별시 강남구 논현로136길 3",
+    "categories": [
+      "기타"
+    ],
+    "districtName": "강남구",
+    "lat": 37.5159647,
+    "lng": 127.0303597,
+    "name": "365필름아트진학상담지도교습소",
+    "officeCode": "B10",
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "neis",
+        "sourceId": "3000042042"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "동대문구",
+    "categories": [
+      "동대문구 동대문구"
+    ],
+    "districtName": "동대문구",
+    "lat": 37.574524,
+    "lng": 127.03965,
+    "name": "동대문구",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "동대문구"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "address": "중랑구",
+    "categories": [
+      "중랑구 중랑구"
+    ],
+    "districtName": "중랑구",
+    "lat": 37.606324,
+    "lng": 127.092584,
+    "name": "중랑구",
+    "officeCode": null,
+    "phone": null,
+    "sourceRefs": [
+      {
+        "source": "data-go",
+        "sourceId": "중랑구"
+      }
+    ],
+    "status": "ACTIVE"
+  }
+]
